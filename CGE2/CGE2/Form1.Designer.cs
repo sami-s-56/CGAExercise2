@@ -108,7 +108,7 @@
             VValue.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             VValue.Location = new System.Drawing.Point(506, 200);
             VValue.Name = "VValue";
-            VValue.Size = new System.Drawing.Size(25, 25);
+            VValue.Size = new System.Drawing.Size(40, 25);
             VValue.TabIndex = 8;
             VValue.Text = "V";
             VValue.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -118,7 +118,7 @@
             UValue.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             UValue.Location = new System.Drawing.Point(506, 125);
             UValue.Name = "UValue";
-            UValue.Size = new System.Drawing.Size(25, 25);
+            UValue.Size = new System.Drawing.Size(40, 25);
             UValue.TabIndex = 7;
             UValue.Text = "U";
             UValue.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -128,9 +128,9 @@
             YValue.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             YValue.Location = new System.Drawing.Point(506, 50);
             YValue.Name = "YValue";
-            YValue.Size = new System.Drawing.Size(25, 25);
+            YValue.Size = new System.Drawing.Size(40, 25);
             YValue.TabIndex = 6;
-            YValue.Text = "Y";
+            YValue.Text = "200";
             YValue.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // checkBox1
@@ -143,6 +143,7 @@
             checkBox1.TabIndex = 9;
             checkBox1.Text = "Invert";
             checkBox1.UseVisualStyleBackColor = true;
+            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
             // 
             // Form1
             // 
