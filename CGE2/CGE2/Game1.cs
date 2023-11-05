@@ -9,8 +9,10 @@ namespace CGE2
     {
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
-
-        //private Model _modelBox;
+        private BasicEffect _basicEffect;
+        private Model _model;
+        private Texture2D _texture;
+        
         private Form1 _form1;
 
         public Game1()
@@ -33,7 +35,14 @@ namespace CGE2
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            //_modelBox = Content.Load<Model>("Teapot");
+            _basicEffect = new BasicEffect(GraphicsDevice)
+            {
+                TextureEnabled = true,
+                VertexColorEnabled = true,
+            };
+
+            _model = Content.Load<Model>("Teapot"); 
+            _texture = Content.Load<Texture2D>("Smiley2");
 
             _form1 = new Form1();
 
@@ -56,11 +65,21 @@ namespace CGE2
 
             _form1.Show();
 
-            // TODO: Add your drawing code here
-            //foreach (var mesh in _modelBox.Meshes)
-            //{
-            //    mesh.Draw();
-            //}
+            foreach (var mesh in _model.Meshes)
+            {
+                foreach (BasicEffect effect in mesh.Effects)
+                {
+                    effect.EnableDefaultLighting();
+                    effect.Texture = _texture;
+                    effect.TextureEnabled = true;
+
+                    effect.World = Matrix.CreateTranslation(0, 0, 0);
+                    effect.View = Matrix.CreateLookAt(new Vector3(0, 0, 1f), Vector3.Zero, Vector3.Up);
+                    effect.Projection = Matrix.CreatePerspectiveFieldOfView(MathHelper.ToRadians(45), GraphicsDevice.Viewport.AspectRatio, 0.1f, 100.0f);
+                }
+                mesh.Draw();
+            }
+
 
             base.Draw(gameTime);
         }

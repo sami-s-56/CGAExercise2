@@ -37,3 +37,5 @@ E:\_SHERIDAN_\ComputerGraphics\CGAExercise2\CGE2\CGE2\obj\Debug\net6.0-windows\r
 E:\_SHERIDAN_\ComputerGraphics\CGAExercise2\CGE2\CGE2\obj\Debug\net6.0-windows\CGE2.pdb
 E:\_SHERIDAN_\ComputerGraphics\CGAExercise2\CGE2\CGE2\obj\Debug\net6.0-windows\CGE2.genruntimeconfig.cache
 E:\_SHERIDAN_\ComputerGraphics\CGAExercise2\CGE2\CGE2\obj\Debug\net6.0-windows\ref\CGE2.dll
+E:\_SHERIDAN_\ComputerGraphics\CGAExercise2\CGE2\CGE2\bin\Debug\net6.0-windows\Content\Smiley2.xnb
+E:\_SHERIDAN_\ComputerGraphics\CGAExercise2\CGE2\CGE2\bin\Debug\net6.0-windows\Content\Teapot.xnb
