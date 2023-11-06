@@ -74,7 +74,7 @@ namespace CGE2
                     effect.TextureEnabled = true;
 
                     effect.World = Matrix.CreateTranslation(0, 0, 0);
-                    effect.View = Matrix.CreateLookAt(new Vector3(0, 0, 1f), Vector3.Zero, Vector3.Up);
+                    effect.View = Matrix.CreateLookAt(new Vector3(0, 0, 5f), Vector3.Zero, Vector3.Up);
                     effect.Projection = Matrix.CreatePerspectiveFieldOfView(MathHelper.ToRadians(45), GraphicsDevice.Viewport.AspectRatio, 0.1f, 100.0f);
                 }
                 mesh.Draw();

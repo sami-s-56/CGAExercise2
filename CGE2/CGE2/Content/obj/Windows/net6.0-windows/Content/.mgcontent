@@ -4,8 +4,8 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>E:/_SHERIDAN_/ComputerGraphics/CGAExercise2/CGE2/CGE2/Content/Smiley2.jpg</File>
-    <File>E:/_SHERIDAN_/ComputerGraphics/CGAExercise2/CGE2/CGE2/Content/Teapot.fbx</File>
+    <File>D:/ComputerGraphicsAnimations/Exercises/CGAExercise2/CGE2/CGE2/Content/Smiley2.jpg</File>
+    <File>D:/ComputerGraphicsAnimations/Exercises/CGAExercise2/CGE2/CGE2/Content/Teapot.fbx</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

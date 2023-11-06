@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>E:/_SHERIDAN_/ComputerGraphics/CGAExercise2/CGE2/CGE2/Content/Teapot.fbx</SourceFile>
-  <SourceTime>2023-11-05T14:20:45.1529053-05:00</SourceTime>
-  <DestFile>E:/_SHERIDAN_/ComputerGraphics/CGAExercise2/CGE2/CGE2/Content/bin/Windows/Content/Teapot.xnb</DestFile>
-  <DestTime>2023-11-05T14:38:45.6908387-05:00</DestTime>
+  <SourceFile>D:/ComputerGraphicsAnimations/Exercises/CGAExercise2/CGE2/CGE2/Content/Teapot.fbx</SourceFile>
+  <SourceTime>2023-09-27T14:52:02.060144-04:00</SourceTime>
+  <DestFile>D:/ComputerGraphicsAnimations/Exercises/CGAExercise2/CGE2/CGE2/Content/bin/Windows/Content/Teapot.xnb</DestFile>
+  <DestTime>2023-11-06T13:36:13.4230566-05:00</DestTime>
   <Importer>FbxImporter</Importer>
   <ImporterTime>2022-07-26T07:44:56-04:00</ImporterTime>
   <Processor>ModelProcessor</Processor>
@@ -54,7 +54,7 @@
   </Parameters>
   <Parameters>
     <Key>Scale</Key>
-    <Value>10</Value>
+    <Value>1</Value>
   </Parameters>
   <Parameters>
     <Key>SwapWindingOrder</Key>
