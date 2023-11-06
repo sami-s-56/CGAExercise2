@@ -61,7 +61,9 @@ namespace CGE2
 
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            Color c = new Color(_form1.R, _form1.G, _form1.B);
+
+            GraphicsDevice.Clear(c);
 
             _form1.Show();
 
