@@ -2,6 +2,9 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using SharpDX.Direct2D1;
+using Effect = Microsoft.Xna.Framework.Graphics.Effect;
+using SpriteBatch = Microsoft.Xna.Framework.Graphics.SpriteBatch;
 
 namespace CGE2
 {
@@ -9,7 +12,7 @@ namespace CGE2
     {
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
-        private BasicEffect _basicEffect;
+        private Effect _CustomEffect;
         private Model _model;
         private Texture2D _texture;
         
@@ -35,14 +38,9 @@ namespace CGE2
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            _basicEffect = new BasicEffect(GraphicsDevice)
-            {
-                TextureEnabled = true,
-                VertexColorEnabled = true,
-            };
-
             _model = Content.Load<Model>("Teapot"); 
             _texture = Content.Load<Texture2D>("Smiley2");
+            _CustomEffect = Content.Load<Effect>("CustomEffect");
 
             _form1 = new Form1();
 
@@ -61,23 +59,27 @@ namespace CGE2
 
         protected override void Draw(GameTime gameTime)
         {
-            Color c = new Color(_form1.R, _form1.G, _form1.B);
-
-            GraphicsDevice.Clear(c);
+            
+            GraphicsDevice.Clear(Color.Black);
 
             _form1.Show();
 
             foreach (var mesh in _model.Meshes)
             {
-                foreach (BasicEffect effect in mesh.Effects)
+                foreach (var part in mesh.MeshParts)
                 {
-                    effect.EnableDefaultLighting();
-                    effect.Texture = _texture;
-                    effect.TextureEnabled = true;
+                    part.Effect = _CustomEffect;
 
-                    effect.World = Matrix.CreateTranslation(0, 0, 0);
-                    effect.View = Matrix.CreateLookAt(new Vector3(0, 0, 5f), Vector3.Zero, Vector3.Up);
-                    effect.Projection = Matrix.CreatePerspectiveFieldOfView(MathHelper.ToRadians(45), GraphicsDevice.Viewport.AspectRatio, 0.1f, 100.0f);
+                    _CustomEffect.Parameters["World"].SetValue(Matrix.CreateTranslation(0, 0, 0));
+                    _CustomEffect.Parameters["View"].SetValue(Matrix.CreateLookAt(new Vector3(0, 0, 5f), Vector3.Zero, Vector3.Up));
+                    _CustomEffect.Parameters["Projection"].SetValue(Matrix.CreatePerspectiveFieldOfView(MathHelper.ToRadians(45), GraphicsDevice.Viewport.AspectRatio, 0.1f, 100.0f));
+
+                    _CustomEffect.Parameters["YValue"].SetValue(_form1.Y); // Example Y value
+                    _CustomEffect.Parameters["UValue"].SetValue(_form1.U); // Example U value
+                    _CustomEffect.Parameters["VValue"].SetValue(_form1.V); // Example V value
+                    _CustomEffect.Parameters["inputTexture"].SetValue(_texture);
+                    _CustomEffect.Parameters["bInvertColor"].SetValue(_form1.bInvert);
+                    
                 }
                 mesh.Draw();
             }

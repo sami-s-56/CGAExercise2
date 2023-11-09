@@ -13,6 +13,12 @@
 
 #---------------------------------- Content ---------------------------------#
 
+#begin CustomEffect.fx
+/importer:EffectImporter
+/processor:EffectProcessor
+/processorParam:DebugMode=Auto
+/build:CustomEffect.fx
+
 #begin Smiley2.jpg
 /importer:TextureImporter
 /processor:TextureProcessor

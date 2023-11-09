@@ -12,9 +12,9 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\syesamiu\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\syesamiu\\.nuget\\packages",
-      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      "C:\\Users\\samis\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\samis\\.nuget\\packages",
+      "D:\\Softwares\\VisualStudiosFiles\\Shared\\NuGetPackages"
     ],
     "configProperties": {
       "System.Runtime.TieredCompilation": false,

@@ -1,3 +1,4 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"D:/ComputerGraphicsAnimations/Exercises/CGAExercise2/CGE2/CGE2/Content/Smiley2.jpg","D:/ComputerGraphicsAnimations/Exercises/CGAExercise2/CGE2/CGE2/Content/bin/Windows/Smiley2.xnb","TextureProcessor","Texture2DContent",10680,65621,0.2071692
-"D:/ComputerGraphicsAnimations/Exercises/CGAExercise2/CGE2/CGE2/Content/Teapot.fbx","D:/ComputerGraphicsAnimations/Exercises/CGAExercise2/CGE2/CGE2/Content/bin/Windows/Teapot.xnb","ModelProcessor","ModelContent",96944,97691,0.1956718
+"E:/_SHERIDAN_/ComputerGraphics/CGAExercise2/CGE2/CGE2/Content/CustomEffect.fx","E:/_SHERIDAN_/ComputerGraphics/CGAExercise2/CGE2/CGE2/Content/bin/Windows/CustomEffect.xnb","EffectProcessor","CompiledEffectContent",888,1320,0.3758832
+"E:/_SHERIDAN_/ComputerGraphics/CGAExercise2/CGE2/CGE2/Content/Smiley2.jpg","E:/_SHERIDAN_/ComputerGraphics/CGAExercise2/CGE2/CGE2/Content/bin/Windows/Smiley2.xnb","TextureProcessor","Texture2DContent",10680,65621,0.0294148
+"E:/_SHERIDAN_/ComputerGraphics/CGAExercise2/CGE2/CGE2/Content/Teapot.fbx","E:/_SHERIDAN_/ComputerGraphics/CGAExercise2/CGE2/CGE2/Content/bin/Windows/Teapot.xnb","ModelProcessor","ModelContent",96944,97691,0.1204229
