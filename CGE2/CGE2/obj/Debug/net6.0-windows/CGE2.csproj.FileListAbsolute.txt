@@ -80,3 +80,4 @@ D:\ComputerGraphicsAnimations\Exercises\CGAExercise2\CGE2\CGE2\obj\Debug\net6.0-
 D:\ComputerGraphicsAnimations\Exercises\CGAExercise2\CGE2\CGE2\obj\Debug\net6.0-windows\CGE2.pdb
 D:\ComputerGraphicsAnimations\Exercises\CGAExercise2\CGE2\CGE2\obj\Debug\net6.0-windows\CGE2.genruntimeconfig.cache
 D:\ComputerGraphicsAnimations\Exercises\CGAExercise2\CGE2\CGE2\obj\Debug\net6.0-windows\ref\CGE2.dll
+E:\_SHERIDAN_\ComputerGraphics\CGAExercise2\CGE2\CGE2\bin\Debug\net6.0-windows\Content\CustomEffect.xnb

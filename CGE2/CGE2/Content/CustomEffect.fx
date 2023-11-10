@@ -1,10 +1,10 @@
 ﻿#if OPENGL
-	#define SV_POSITION POSITION
-	#define VS_SHADERMODEL vs_3_0
-	#define PS_SHADERMODEL ps_3_0
+#define SV_POSITION POSITION
+#define VS_SHADERMODEL vs_3_0
+#define PS_SHADERMODEL ps_3_0
 #else
-	#define VS_SHADERMODEL vs_4_0_level_9_1
-	#define PS_SHADERMODEL ps_4_0_level_9_1
+#define VS_SHADERMODEL vs_4_0_level_9_1
+#define PS_SHADERMODEL ps_4_0_level_9_1
 #endif
 
 sampler2D inputTexture;
@@ -60,4 +60,12 @@ float4 PS_main(float2 texCoord : TEXCOORD0) : COLOR0
     float3 rgb = YUVtoRGB(yuv);
 
     return float4(rgb, color.a);
+}
+
+technique Technique1
+{
+    pass Pass1
+    {
+        PixelShader = compile ps_4_0_level_9_1 PS_main();
+    }
 }

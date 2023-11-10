@@ -1,3 +1,4 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"E:/_SHERIDAN_/ComputerGraphics/CGAExercise2/CGE2/CGE2/Content/CustomEffect.fx","E:/_SHERIDAN_/ComputerGraphics/CGAExercise2/CGE2/CGE2/Content/bin/Windows/Content/CustomEffect.xnb","EffectProcessor","CompiledEffectContent",1630,1187,0.3593712
 "E:/_SHERIDAN_/ComputerGraphics/CGAExercise2/CGE2/CGE2/Content/Smiley2.jpg","E:/_SHERIDAN_/ComputerGraphics/CGAExercise2/CGE2/CGE2/Content/bin/Windows/Content/Smiley2.xnb","TextureProcessor","Texture2DContent",10680,65621,0.1958217
 "E:/_SHERIDAN_/ComputerGraphics/CGAExercise2/CGE2/CGE2/Content/Teapot.fbx","E:/_SHERIDAN_/ComputerGraphics/CGAExercise2/CGE2/CGE2/Content/bin/Windows/Content/Teapot.xnb","ModelProcessor","ModelContent",96944,97691,0.1785067
